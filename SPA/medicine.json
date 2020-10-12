@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Paracitamol",
+    "Brand": "Paracitamol",
+    "Price": 12.0,
+    "Quantity": 2132,
+    "ExpiryDate": "2020-12-12T00:00:00",
+    "Notes": "fdsfgfd"
+  },
+  {
+    "Name": "crocin",
+    "Brand": "cipla",
+    "Price": 2.0,
+    "Quantity": 12232,
+    "ExpiryDate": "2020-12-12T00:00:00",
+    "Notes": "sd,dsnf,dsnfnv,nfd,"
+  }
+]

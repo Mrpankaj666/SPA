@@ -1,0 +1,27 @@
+<h1>Medicines List</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<input type="text" id="search"/> <button  (click)="search()">Search</button>
+<p *ngIf="!medicines"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="medicines">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Brand</th>
+      <th>Quantity</th>
+      <th>Expiry Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let medicine of medicines">
+      <td>{{ medicine.name }}</td>
+      <td>{{ medicine.price }}</td>
+      <td>{{ medicine.brand }}</td>
+      <td>{{ medicine.quantity }}</td>
+      <td>{{ medicine.expiryDate }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,48 @@
+<form [formGroup]="medicineForm" (ngSubmit)="onSubmit()">
+  <div>
+  <label>Name :</label>
+  <input type="text"
+  formControlName="name"
+   >
+  </div>
+  <div>
+    <label>Brand :</label>
+    <input type="text"
+    formControlName="brand"
+     />
+    </div>
+    <div>
+      <label>Price :</label>
+      <input type="text"
+      formControlName="price"
+       />
+      </div>
+      <div>
+        <label>Quantity :</label>
+        <input type="text"
+        formControlName="quantity"
+         />
+        </div>
+        <div>
+          <label>Expiry Date :</label>
+          <input type="text"
+          formControlName="expiryDate"
+           />
+          </div>
+          <div>
+            <label>Notes:</label>
+            <input type="text"
+            formControlName="notes"
+             />
+            </div>
+
+            <div>
+              <button
+        type="submit"
+        
+        [disabled]="medicineForm.invalid"
+      >
+        <span>Save</span>
+      </button>
+            </div>
+</form>
